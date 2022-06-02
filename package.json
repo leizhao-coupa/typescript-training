@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean && rm -rf node_modules",
+    "install": "lerna bootstrap",
+    "test": "lerna run test",
+    "reduxToolkitTrain": "lerna run --scope @ts-training/redux-toolkit-train start"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "examples/**/*"
+  ],
+  "repository": "git@github.com:leizhao-coupa/typescript-training.git",
+  "author": "Lei Zhao <lei.zhao@coupa.com>",
+  "license": "MIT"
+}
